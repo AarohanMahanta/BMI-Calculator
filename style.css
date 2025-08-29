@@ -1,5 +1,5 @@
 * {
-    margin-top: 5px;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
@@ -11,9 +11,9 @@ body {
 }
 
 .container {
-    max-width: 100%;
-    margin: 0;
-    padding: 10px; 
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 15px; 
 }
 
 h1 {
@@ -25,13 +25,6 @@ h1 {
 
 .bmi-desc {
     display: block;
-    gap: 20px;
-    flex-wrap: wrap; 
-}
-
-.intro, .bmi-form {
-    flex: 1; 
-    min-width: 280px;
 }
 
 .intro p {
@@ -60,24 +53,27 @@ h1 {
     text-align: left;
 }
 
-
-label, input, button {
+label {
     display: block; 
-    width: 100%;
+    margin-bottom: 5px;
+    margin-top: 15px;
+}
+
+.input-group {
+    display: flex;
+    gap: 10px;
     margin-bottom: 10px;
 }
 
-.bmi-form label {
-    margin-bottom: 10px; 
-}
-
-.bmi-form input {
+.input-group input, .input-group select {
     padding: 8px;
-    margin-top: 4px;
+    flex: 1;
 }
 
 .helper-text {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+    color: gray;
 }
 
 button {
@@ -87,18 +83,24 @@ button {
     cursor: pointer;
     padding: 12px;       
     border-radius: 4px; 
-    width: auto;  
+    width: 100%;  
+    margin-top: 15px;
 }
 
 button:hover {
     background-color: #0056b3;
 }
 
-@media (max-width: 768px) {
-    .bmi-desc {
-        flex-direction: column; 
-    }
+.button-result {
+    margin-top: 15px;
+}
 
+#result {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
     h1 {
         font-size: 1.8rem;
     }
@@ -110,6 +112,6 @@ button:hover {
     }
 
     .container {
-        padding: 8px;
+        padding: 10px;
     }
 }
