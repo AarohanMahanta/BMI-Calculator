@@ -1,3 +1,7 @@
+## Live Demo
+Check out the live version here:  
+[BMI Calculator](https://bmi-calculator-c54c.onrender.com)
+
 # BMI-Calculator
 A simple BMI (Body Mass Index) Calculator built using HTML, CSS, and JavaScript.
 ## Features
